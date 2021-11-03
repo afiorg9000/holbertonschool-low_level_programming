@@ -2,13 +2,16 @@
 
 /**
  * int_index - searches for an integer.
- * @array: 
+ * @array: array of integers.
  * @size: number of elements in the array.
  * @cmp: pointer used to compare values.
+ * Return: -1
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int count, a;
+
 	if (size <= 0)
 	{
 		return (-1);
@@ -29,5 +32,3 @@ int int_index(int *array, int size, int (*cmp)(int))
 	}
 	return (-1);
 }
-
-
