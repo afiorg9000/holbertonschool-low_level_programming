@@ -124,6 +124,8 @@ $ valgrind ./e
 ```
 
 **[5-get_dnodeint.c](5-get_dnodeint.c)** - Function returns the nth node of a `dlistint_t` list
+
+If the linked list is empty, the script will return null. If it isn't, it counts and points to the next nodes of the linked list, until it reaches null and returns the nodes.
 ```
 $ gcc -Wall -pedantic -Werror -Wextra 5-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 5-get_dnodeint.c -o h
 $ ./h
