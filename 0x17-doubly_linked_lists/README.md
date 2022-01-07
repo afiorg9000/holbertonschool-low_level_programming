@@ -61,6 +61,9 @@ $ ./b
 ```
 
 **[2-add_dnodeint.c](2-add_dnodeint.c)** - Function adds a new node at the beginning of a `dlistint_t` list
+
+The script creates a new allocated node and gives it data. Then nulls the old node in the beginning of the list and replaces it with the new node. If the old node isnt null, it assigns the next node of the new node as the next node of the previous node. Else the new node nulls the next node and assigns the new node as the new head.
+
 ```
 $ gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-add_dnodeint.c 0-print_dlistint.c -o c
 $ ./c 
