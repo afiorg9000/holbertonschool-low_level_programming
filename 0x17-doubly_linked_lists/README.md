@@ -150,6 +150,7 @@ sum = 1534
 ```
 
 **[7-insert_dnodeint.c](7-insert_dnodeint.c)** - Function inserts a new node at a given position
+
 ```
 $ gcc -Wall -pedantic -Werror -Wextra 7-main.c 2-add_dnodeint.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 7-insert_dnodeint.c -o j
 $ ./j 
