@@ -51,6 +51,9 @@ $ ./a
 ```
 
 **[1-dlistint_len.c](1-dlistint_len.c)** - Function returns the number of elements in a `dlistint_t` list
+
+While at the head of the list, the script will assign the head to point and increment to the next node, then return the number of nodes counted.
+
 ```
 $ gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-dlistint_len.c -o b
 $ ./b 
