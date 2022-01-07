@@ -94,6 +94,8 @@ $ ./d
 ```
 
 **[4-free_dlistint.c](4-free_dlistint.c)** - Function frees a `dlistint_t` list
+
+If the linked list is empty, the script will return nothing, If it isn't it will traverse and free the head list.
 ```
 $ gcc -Wall -pedantic -Werror -Wextra 4-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c -o e
 $ valgrind ./e 
