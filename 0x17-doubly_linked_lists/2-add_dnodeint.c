@@ -9,20 +9,19 @@
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	/*creates a new allocated node*/dlistint_t *new_node = malloc(sizeof(dlistint_t)), *tmp_node = *head;
+	dlistint_t *new_node = malloc(sizeof(dlistint_t)), *prev_node = *head;
 
-	if (head == NULL)
+	if (new_node == NULL)
 		return (NULL);
-	/*assigns the node with data*/
 	new_node->n = n;
-	/*adds a new node at the beginning of the list*/new_node->prev = NULL;
-	if (tmp_node != NULL)
+	new_node->prev = NULL;
+	if (prev_node != NULL)
 	{
-		new_node->next = tmp_node;
-		tmp_node->prev = new_node;
+		new_node->next = prev_node;
+		prev_node->prev = new_node;
 	}
 	else
 		new_node->next = NULL;
-	*head = new_node;
+	*head = new_node; 
 	return (new_node);
 }
