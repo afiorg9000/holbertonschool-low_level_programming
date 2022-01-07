@@ -2,7 +2,8 @@
 
 /**
  * add_dnodeint - adds a new node at the beginning of a dlistint_t list.
- *
+ * @head: the head.
+ * @n: node.
  * Return: Always EXIT_SUCCESS.
  */
 
