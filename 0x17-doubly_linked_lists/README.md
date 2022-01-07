@@ -78,6 +78,8 @@ $ ./c
 ```
 
 **[3-add_dnodeint_end.c](3-add_dnodeint_end.c)** - Function adds a new node at the end of a `dlistint_t` list
+
+This script creates an new allocated node and gives it data. Then nulls the next node at the end of the list to replace it with the new node. If the list is empty, it assigns the the new node as the head. While it's not empty, it'll traverse till the last node, where it makes the previous node of the new node as the last node and moves the next node of the last node as the new node.
 ```
 $ gcc -Wall -pedantic -Werror -Wextra 3-main.c 3-add_dnodeint_end.c 0-print_dlistint.c -o d
 $ ./d 
