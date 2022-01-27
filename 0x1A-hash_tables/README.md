@@ -1,3 +1,6 @@
+ed:   ../0x12-singly_linked_lists/lists.h
+ed:   ../0x12-singly_linked_lists/lists.h
+ed:   ../0x12-singly_linked_lists/lists.h
 0x1A. C - Hash tables
 =====================
 
